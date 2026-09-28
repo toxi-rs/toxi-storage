@@ -1365,9 +1365,9 @@ dependencies = [
 
 [[package]]
 name = "once_cell"
-version = "1.21.3"
+version = "1.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
+checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
 
 [[package]]
 name = "openssl-probe"
@@ -1380,20 +1380,6 @@ name = "outref"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a80800c0488c3a21695ea981a54918fbb37abf04f4d0720c453632255e2ff0e"
-
-[[package]]
-name = "toxi-storage"
-version = "2.0.0"
-dependencies = [
- "async-trait",
- "aws-config",
- "aws-sdk-s3",
- "bytes",
- "mime_guess",
- "thiserror",
- "tokio",
- "uuid",
-]
 
 [[package]]
 name = "p256"
@@ -2005,6 +1991,21 @@ name = "tower-service"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8df9b6e13f2d32c91b9bd719c00d1958837bc7dec474d94952798cc8e69eeec3"
+
+[[package]]
+name = "toxi-storage"
+version = "3.1.1"
+dependencies = [
+ "async-trait",
+ "aws-config",
+ "aws-sdk-s3",
+ "bytes",
+ "mime_guess",
+ "once_cell",
+ "thiserror",
+ "tokio",
+ "uuid",
+]
 
 [[package]]
 name = "tracing"
